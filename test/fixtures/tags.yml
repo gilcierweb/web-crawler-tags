@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  h1: MyText
+  h2: MyText
+  h3: MyText
+  h4: MyText
+  h5: MyText
+  h6: MyText
+  link: MyText
+  site: one
+
+two:
+  h1: MyText
+  h2: MyText
+  h3: MyText
+  h4: MyText
+  h5: MyText
+  h6: MyText
+  link: MyText
+  site: two
