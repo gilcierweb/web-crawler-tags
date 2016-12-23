@@ -2,6 +2,8 @@
 
 Simple web crawler tags content h1, h2, h3, h4, h5, h6, link.
 
+![ScreenShot](https://raw.github.com/gilcierweb/web-crawler-tags/master/app/assets/images/print.png)
+
 ```shell
 cd web-crawler-tags
 

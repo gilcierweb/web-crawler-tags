@@ -10,7 +10,7 @@ pt-BR:
     error: "%{count} erros impediram a gravação de %{resource}:"
     submit: 'Salvar'
   home:
-    show_content_url: 'Ver conteúdo de extraído'
+    show_content_url: 'Ver conteúdo extraído'
     new: 'Indexar novo site'
   sites:
     title:

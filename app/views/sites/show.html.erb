@@ -1,9 +1,7 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Url:</strong>
   <%= @site.url %>
 </p>
 
-<%= link_to t('edit'), edit_site_path(@site), class: "waves-effect waves-teal btn-flat" %> |
-<%= link_to t('back'), sites_path, class: "waves-effect waves-teal btn-flat" %>
+<%= link_to t('edit'), edit_site_path(@site), class: "btn btn-raised btn-primary" %> |
+<%= link_to t('back'), sites_path, class: "btn btn-raised btn-default" %>

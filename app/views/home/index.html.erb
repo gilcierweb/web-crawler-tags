@@ -1,15 +1,15 @@
 <h1>Web Crawler Tags</h1>
 
-  <div class="col s12">
+  <div class="">
     <h1>Sites</h1>
 
-    <%= link_to t('home.new'), new_site_path, class: 'waves-effect waves-light btn' %>
+    <%= link_to t('home.new'), new_site_path, class: 'btn btn-raised btn-success' %>
 
-    <table class="responsive-table bordered striped">
+    <table class="table table-bordered table-striped">
       <thead>
       <tr>
         <th>Url</th>
-        <th colspan="4"></th>
+        <th colspan="4"><%= t('action') %></th>
       </tr>
       </thead>
 
@@ -17,10 +17,10 @@
       <% @sites.each do |site| %>
           <tr>
             <td><%= site.url %></td>
-            <td><%=link_to t('home.show_content_url'), tag_path(site) %></td>
-            <td><%= link_to t('show'), site %></td>
-            <td><%= link_to t('edit'), edit_site_path(site) %></td>
-            <td><%= link_to t('destroy'), site, method: :delete, data: {confirm: t('confirm')} %></td>
+            <td><%= link_to t('home.show_content_url'), tag_path(site), class: 'btn btn-raised btn-info' %></td>
+            <td><%= link_to t('show'), site, class: 'btn btn-raised btn-warning' %></td>
+            <td><%= link_to t('edit'), edit_site_path(site), class: 'btn btn-raised btn-primary' %></td>
+            <td><%= link_to t('destroy'), site, method: :delete, data: {confirm: t('confirm')}, class: 'btn btn-raised btn-danger' %></td>
           </tr>
       <% end %>
       </tbody>
@@ -28,7 +28,7 @@
 
     <br>
 
-    <%= link_to t('home.new'), new_site_path, class: 'waves-effect waves-light btn' %>
+    <%= link_to t('home.new'), new_site_path, class: 'btn btn-raised btn-success' %>
   </div>
 
 
