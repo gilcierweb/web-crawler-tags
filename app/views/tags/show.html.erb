@@ -2,43 +2,44 @@
 
 <p>
   <strong>H1:</strong>
-  <%= @tag.h1 %>
+  <%= clear_tags(@tag.h1) %>
 </p>
 
 <p>
   <strong>H2:</strong>
-  <%= @tag.h2 %>
+  <%= clear_tags(@tag.h2) %>
 </p>
 
 <p>
   <strong>H3:</strong>
-  <%= @tag.h3 %>
+  <%= clear_tags(@tag.h3) %>
 </p>
 
 <p>
   <strong>H4:</strong>
-  <%= @tag.h4 %>
+  <%= clear_tags(@tag.h4) %>
 </p>
 
 <p>
   <strong>H5:</strong>
-  <%= @tag.h5 %>
+  <%= clear_tags(@tag.h5) %>
 </p>
 
 <p>
   <strong>H6:</strong>
-  <%= @tag.h6 %>
+  <%= clear_tags(@tag.h6) %>
 </p>
 
 <p>
   <strong>Link:</strong>
-  <%= @tag.link %>
+  <%= clear_tags(@tag.link) %>
 </p>
 
 <p>
   <strong>Site:</strong>
-  <%= @tag.site %>
+  <%= @tag.site.url %>
 </p>
 
-<%= link_to 'Edit', edit_tag_path(@tag) %> |
-<%= link_to 'Back', tags_path %>
+<%#link_to 'Edit', edit_tag_path(@tag) %>
+<%# link_to 'Back', tags_path %>
+<%= link_to t('back'), sites_path, class: "waves-effect waves-teal btn-flat" %>

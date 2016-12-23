@@ -1,0 +1,35 @@
+<h1>Web Crawler Tags</h1>
+
+  <div class="col s12">
+    <h1>Sites</h1>
+
+    <%= link_to t('home.new'), new_site_path, class: 'waves-effect waves-light btn' %>
+
+    <table class="responsive-table bordered striped">
+      <thead>
+      <tr>
+        <th>Url</th>
+        <th colspan="4"></th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @sites.each do |site| %>
+          <tr>
+            <td><%= site.url %></td>
+            <td><%=link_to t('home.show_content_url'), tag_path(site) %></td>
+            <td><%= link_to t('show'), site %></td>
+            <td><%= link_to t('edit'), edit_site_path(site) %></td>
+            <td><%= link_to t('destroy'), site, method: :delete, data: {confirm: t('confirm')} %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+    <%= link_to t('home.new'), new_site_path, class: 'waves-effect waves-light btn' %>
+  </div>
+
+
+
