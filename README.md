@@ -1,9 +1,8 @@
 # Web Crawler Tags
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple web crawler tags content h1, h2, h3, h4, h5, h6, link.
 
-
+```shell
 cd web-crawler-tags
 
 rails generate scaffold sites url:string:index 
@@ -25,4 +24,6 @@ rails routes
        tag GET    /tags/:id(.:format)       tags#show
       root GET    /                         home#index
 
+rails server
 
+```
