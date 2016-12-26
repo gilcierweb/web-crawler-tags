@@ -1,5 +1,5 @@
 class Site < ApplicationRecord
-  has_many :tag
+  has_many :tag, dependent: :destroy
 
   validates :url, presence: true, length: { minimum: 6 }
   validates :url, uniqueness: true
