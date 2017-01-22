@@ -29,14 +29,16 @@ class SitesController < ApplicationController
     @site = Site.new(site_params)
 
     respond_to do |format|
-      site_data =
+
       if @site.save
 
-        url= params[:site][:url]
-        tags =CrawlerTags.new(url)
+        url = params[:site][:url]
+        
+        tags = CrawlerTags.new(url)
+
         data = tags.crawler_data
-        # data = trip_params.merge(name: 'new name')
         data[:site_id] = @site.id
+
         @tag = Tag.new(data)
         @tag.save
 
