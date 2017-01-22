@@ -2,6 +2,9 @@
 
 Simple web crawler tags content h1, h2, h3, h4, h5, h6, link.
 
+[![Build Status](https://travis-ci.org/gilcierweb/web-crawler-tags.svg?branch=master)](https://travis-ci.org/gilcierweb/web-crawler-tags)
+[![Code Climate](https://codeclimate.com/github/gilcierweb/web-crawler-tags/badges/gpa.svg)](https://codeclimate.com/github/gilcierweb/web-crawler-tags)
+
 ![ScreenShot](https://raw.github.com/gilcierweb/web-crawler-tags/master/app/assets/images/print.png)
 
 Video demo Youtube:
@@ -11,7 +14,7 @@ Video demo Youtube:
 ```shell
 cd web-crawler-tags
 
-rails generate scaffold sites url:string:index 
+rails generate scaffold sites url:string:index
 rails generate scaffold tags h1:text h2:text h3:text h4:text h5:text h6:text link:text site:references
 
 rails routes
