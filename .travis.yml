@@ -4,8 +4,6 @@ rvm:
 env:
   - DB=postgresql
 script:
-  - bundle exec rake db:create --trace
-  - bundle exec rake db:test:prepare
-  - bundle exec rake
+  - bundle exec rake db:create  
 before_script:
   - psql -c "CREATE USER gilcier WITH PASSWORD 'gil123'" -U postgres
