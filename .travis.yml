@@ -4,4 +4,4 @@ rvm:
 env:
   - DB=postgresql
 before_script:
-  - psql -c "CREATE USER gilcier WITH PASSWORD 'gil123';" -U postgres
+  - psql -c "CREATE USER gilcier WITH PASSWORD 'gil123'" -U postgres
